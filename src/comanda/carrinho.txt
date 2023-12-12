@@ -1,0 +1,5 @@
+Produtos no Carrinho:
+x-tudo - R$ 11,00
+3223 - R$ 2323,00
+
+Valor Total: R$ 2334,00

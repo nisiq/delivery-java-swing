@@ -1,0 +1,29 @@
+crie um db chamado delivery
+
+USE delivery;
+-- restaurantes
+CREATE TABLE restaurantes (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    usuario VARCHAR(255),
+    senha VARCHAR(255),
+    cep VARCHAR(255),
+    cnpj VARCHAR(255)
+);
+
+-- clientes
+CREATE TABLE clientes (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    usuario VARCHAR(255),
+    senha VARCHAR(255),
+    cep VARCHAR(255),
+    cpf VARCHAR(255)
+);
+
+-- cardapio
+CREATE TABLE cardapio (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    produto VARCHAR(255),
+    valor DOUBLE,
+    restaurante_id INT,
+    FOREIGN KEY (restaurante_id) REFERENCES restaurantes(id)
+);

@@ -1,0 +1,25 @@
+* Conexão com diferentes bancos de dados relacionais
+
+* O driver JDBC é uma biblioteca que fornece a implementação
+das interfaces JDBC para um banco de dados
+
+
+Conector/j
+https://dev.mysql.com/downloads/connector/j/
+Platform Independent
+Incluir em External Libraries
+mysql-connector-j....
+
+
+Antes de estabelecer uma conexão com um banco de dados, é necessário registrar
+driver correspondente usando o método registerDriver do DriverManager.
+Isso informa ao DriverManager que o driver está disponível para ser utilizado.
+
+
+PreparedStatement oferece segurança contra SQL injection, melhora o desempenho ao pré-compilar a
+instrução SQL e torna o código mais legível e fácil de manter.
+    A principal diferença entre um Statement e um PreparedStatement é que o PreparedStatement
+    aceita parâmetros na forma de marcadores de posição, representados pelo caractere ?
+
+
+SQL injection é uma técnica de ataque cibernético na qual um invasor insere instruções SQL maliciosas em uma consulta SQL.
